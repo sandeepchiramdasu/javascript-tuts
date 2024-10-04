@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <h1>JavaScript global variable</h1>
+
+        <p>A JavaScript global variable is accessible from any function. A variable 
+            i.e. declared outside the function or declared with window object is known as global variable. </p>
+
+        <script>  
+                var data=200; //gloabal variable  
+                function a(){  
+                    data1 = 300; // local variable
+                    document.writeln(data, data1);  
+                }  
+                function b(){  
+                document.writeln(data); 
+                }  
+                a(); //calling JavaScript function
+                b();
+        </script>  
+                  
+                
+    </body>
+</html>

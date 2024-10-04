@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var x = 20,y = 2;
+
+            function assign(){
+                document.write(x=y);
+            }
+            function addAssign(){
+                document.write(x += y);
+            }
+            function subAssign(){
+                document.write(x -= y);
+            }
+            function mulAssign(){
+                document.write(x *= y);
+            }
+            function divAssign(){
+                document.write(x /= y);
+            }
+            function modAssign(){
+                document.write(x %= y);
+            }
+        </script>
+    </head>
+    <body>
+
+        <h1> x = 20; y = 2</h1>
+        <h1>Assign</h1>
+        <input type="button" value="click" onclick="assign()"><br><br>
+
+        <h1>add and assign</h1>
+        <input type="button" value="click" onclick="addAssign()"><br><br>
+
+        <h1>subtract and assign</h1>
+        <input type="button" value="click" onclick="subAssign()"><br><br>
+
+        <h1>multiply and assign</h1>
+        <input type="button" value="click" onclick="mulAssign()"><br><br>
+
+        <h1>divide and assign</h1>
+        <input type="button" value="click" onclick="divAssign()"><br><br>
+
+        <h1>modulus and assign</h1>
+        <input type="button" value="click" onclick="modAssign()"><br><br>
+
+    </body>
+</html>

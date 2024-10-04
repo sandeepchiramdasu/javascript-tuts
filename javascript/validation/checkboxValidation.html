@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function validate(){
+         var valid = false;
+         if(document.getElementById("javascript").checked){
+         	valid = true;
+         }
+          else if(document.getElementById("jquery").checked){
+         	valid = true;
+         }
+          else if(document.getElementById("html").checked){
+         	valid = true;
+         }
+         else if(document.getElementById("css").checked){
+         	valid = true;
+         }
+         if(valid){
+         	alert('validation successfully');
+         }
+         else{
+         	alert('please select ateast one technology');
+         	return false;
+         }
+     }
+	</script>
+</head>
+<body>
+    <form action="db.php" method="post" onsubmit="return validate()">
+    <input type="checkbox" value="javascript" id="javascript">javascript
+    <input type="checkbox" value="jquery" id="jquery">Jquery
+    <input type="checkbox" value="html" id="html">HTML
+    <input type="checkbox" value="css" id="css">CSS
+    <input type="submit" onclick="validate()" value="submit">
+</form>
+</body>
+</html>

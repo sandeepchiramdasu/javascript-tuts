@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>*{background-color: beige;color: cornflowerblue;}</style>
+    </head>
+    <body>
+        <h1>JavaScript Form Validation</h1>
+        <p>It is important to validate the form submitted by the user because it can have 
+            inappropriate values. So validation is must.</p>
+        <p>The JavaScript provides you the facility the validate the form on the client side
+             so processing will be fast than server-side validation. So, most of the 
+             web developers prefer JavaScript form validation.</p>
+
+             <script>  
+                function validateform(){  
+                var name=document.myform.name.value;  
+                var password=document.myform.password.value;  
+                  
+                if (name==null || name==""){  
+                  alert("Name can't be blank");  
+                  return false;  
+                }else if(password.length<6){  
+                  alert("Password must be at least 6 characters long.");  
+                  return false;  
+                  }  
+                }  
+            </script>  
+                  
+            <form name="myform" method="post" action="abc.jsp" onsubmit="return validateform()" >  
+                Name: <input type="text" name="name"><br/>  
+                Password: <input type="password" name="password"><br/>  
+                <input type="submit" value="register">  
+            </form>  
+                
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            span{
+                color: tomato;
+                background-color: antiquewhite;
+            }
+        </style>
+    </head>
+    <body>
+        <span id="msg">  </span>
+
+        <script>
+        
+        function getTime(){
+        var today = new Date();
+        var h  = today.getHours();
+        var m = today.getMinutes();
+        var s= today.getSeconds();
+
+        document.getElementById('msg').innerHTML= h +":" + m +":" + s;
+
+        setInterval("getTime()",1000) // Two parameters calling now 
+
+        }
+
+        getTime();
+
+
+</script>  
+
+    </body>
+</html>

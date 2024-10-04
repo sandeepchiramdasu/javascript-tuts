@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h3{
+                color: blue;
+                background-color: antiquewhite;
+            }
+            p{
+                color: brown;
+            }
+            strong{
+                color: blueviolet;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Functions</h1>
+
+        <p>JavaScript functions are used to perform operations.
+            We can call JavaScript function many times to reuse the code.</p>
+
+        <h2>Advantage of JavaScript function</h2>
+
+        <h3>Code reusability:</h3><p>We can call a function several times so it save coding</p>
+
+        <h3>Less Coding</h3><p>It makes our program compact. We don’t need to write many lines
+             of code each time to perform a common task.</p>
+
+        <strong>1.	function functionName([arg1, arg2, ...argN]){  <br>
+                2.	 //code to be executed  <br>
+                3.	}  <br><br>
+            </strong>
+        <script>
+
+            function mul(a, b){
+                document.write(a+" * "+b+" : "+(a * b));
+            }
+            mul(10,2);
+
+            function greet(){
+                alert("Good Morning");
+            }
+            
+        </script>
+        <br><br>
+        <input type="button" value="click" onclick="greet()">
+    </body>
+</html>

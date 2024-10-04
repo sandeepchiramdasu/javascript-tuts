@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>*{color: brown;background-color: antiquewhite;}</style>
+    </head>
+    <body>
+        <h1>Document Object Model</h1>
+
+        <h3>The document object represents the whole html document.</h3>
+
+        <p>When html document is loaded in the browser, it becomes a document object.
+            It is the root element that represents the html document. It has properties
+            and methods. By the help of document object, we can add dynamic content to our web page.</p>
+        
+        <h3>Accessing field value by document object:</h3>
+
+        <p>In this example, we are going to get the value of input text by user. Here, 
+            we are using document.form1.name.value to get the value of name field.</p>
+        <script type="text/javascript">  
+            function printvalue(){  
+            var name=document.form1.name.value;  
+            alert("Welcome: "+name);  
+            }  
+        </script>  
+              
+            <form name="form1">  
+            Enter Name:<input type="text" name="name"/>  
+            <input type="button" onclick="printvalue()" value="print name"/>  
+            </form>  
+            
+    </body>
+</html>

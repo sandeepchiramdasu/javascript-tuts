@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>*{background-color:salmon ;color:rgb(21, 14, 14);}</style>
+    </head>
+    <body>
+        <h1>JavaScript Number Validation</h1>
+        <script>  
+            function validate(){  
+            var num=document.myform.num.value;  
+            if (isNaN(num)){  
+              document.getElementById("numloc").innerHTML="Enter Numeric value only";  
+              return false;  
+            }else{  
+              return true;  
+              }  
+            }  
+        </script>  
+
+        <form name="myform" onsubmit="return validate()" >  
+            Number: <input type="text" name="num"><span id="numloc"></span><br/>  
+            <input type="submit" value="submit">  
+        </form>  
+              
+            
+    </body>
+</html>
